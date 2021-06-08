@@ -12,19 +12,12 @@ KLIPS(한국노동패널)의 raw 데이터를 논문 작성에 필요한 부분�
 
 ## get_preprocessing_data 파이썬 코드
 개인 특성을 나타내는 변수와 인적자본 산출을 위한 소비자 물가, 산업군 return 데이터 등을 각각 전처리하는 코드
-def get_personal_mask(personal_data):
-def get_edu(personal_masked_data):
-def get_sex(personal_educated_data):
-def get_married(personal_sex_data):
-def get_work(personal_married_data):
-def get_industry8(personal_worked_data, mid_industry_classification):
-def get_industry_sector(personal_midind_data, large_industry_classification):
-def get_income_data(personal_hhid, house_data):
-def get_housing(house_data):
-def get_final_xvalue(house_data, fin_personal_data):
-def get_cpi_multi(cpi_data, data_degree_list):
-def get_final_yvalue(income_data, cpi_multiple):
-def remove_novalue_index(cpi_adj_income):
-def get_total_data(cpi_adj_income, preprocessed_x_data):
-def get_agecut_data(data, start_age):
+
 ## analysis_method 파이썬 코드
+인적자본을 산출하기 위한 코드이며, 각 함수는 아래의 설명과 같다
+
+def get_reg_x(prepro_data): 회귀분석에 필요한 x변수를 가공하는 코드
+
+def fe_regression_sol(prepro_data, summary_option=True): x변수를 활용하여 y변수인 인적자본을 회귀분석하는 과정
+
+def polynomial_matrix(age_data, degree): 나이변수를 활용하여 다항회귀분석을 진행 ( 생애주기별 인적자본을 추산하기 위해 )
