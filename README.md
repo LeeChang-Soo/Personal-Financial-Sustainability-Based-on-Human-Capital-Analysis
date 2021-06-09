@@ -3,6 +3,9 @@
 
 논문 링크 : https://www.mdpi.com/2071-1050/13/5/2700/htm
 
+## 사용 데이터 ( data file )
+KLIPS(한국노동패널)데이터의 개인데이터와 가구데이터, 거시경제 데이터인 CPI데이터와 산업군별 수익률, 국내와 해외의 국채데이터 등 
+
 ## Glide_path 파이썬 코드
 
 ## Calibration_Labor_Income 파이썬 코드
